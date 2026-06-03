@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LaunchBoost — Startup Growth Accelerator</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ─── Progress Bar ─────────────────────────────── -->
+<div id="progress-bar"></div>
+
+<!-- ─── Page Loader ──────────────────────────────── -->
+<div id="loader">
+  <div class="loader-inner">
+    <span class="loader-logo">LB</span>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+<!-- ─── Navbar ───────────────────────────────────── -->
+<nav class="navbar" id="navbar">
+  <a class="nav-logo" href="#home">Launch<span>Boost</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#contact" class="nav-cta">Free Audit</a></li>
+  </ul>
+  <div class="nav-right">
+    <button id="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<!-- ─── Hero ─────────────────────────────────────── -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+  <div class="hero-inner container">
+    <div class="hero-badge"><span class="badge-dot"></span> Trusted by 500+ Startups Worldwide</div>
+    <h1 class="hero-h1">
+      Launch Faster.<br/>
+      <span class="gradient-text">Grow Smarter.</span><br/>
+      Scale Bigger.
+    </h1>
+    <p class="hero-sub">
+      Data-driven marketing that transforms startups into market leaders. We handle growth — you build the product.
+    </p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn-primary"><i class="fas fa-rocket"></i> Get Free Growth Audit</a>
+      <a href="#pricing" class="btn-outline">View Plans <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="hero-metrics">
+      <div class="metric"><span class="metric-num" data-target="500">0</span><span class="metric-plus">+</span><p>Startups Launched</p></div>
+      <div class="metric-divider"></div>
+      <div class="metric"><span class="metric-num" data-target="20">0</span><span class="metric-plus">Cr+</span><p>Revenue Generated</p></div>
+      <div class="metric-divider"></div>
+      <div class="metric"><span class="metric-num" data-target="98">0</span><span class="metric-plus">%</span><p>Satisfaction Rate</p></div>
+      <div class="metric-divider"></div>
+      <div class="metric"><span class="metric-num" data-target="150">0</span><span class="metric-plus">+</span><p>Campaigns Run</p></div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint"><span>Scroll</span><i class="fas fa-chevron-down"></i></div>
+</section>
+
+<!-- ─── Trusted By ───────────────────────────────── -->
+<section class="trusted">
+  <div class="container">
+    <p class="trusted-label">Trusted by fast-growing startups across</p>
+    <div class="logo-ticker-wrap">
+      <div class="logo-ticker">
+        <span>FinTechX</span><span>AIWorks</span><span>CloudSync</span><span>PayLink</span>
+        <span>SkillBoost</span><span>HealthPlus</span><span>MarketHub</span><span>TechNova</span>
+        <span>EduGrow</span><span>ShopEase</span><span>TravelGo</span><span>Foodify</span>
+        <span>DataSpark</span><span>SmartHire</span><span>QuickCart</span>
+        <!-- duplicate for seamless loop -->
+        <span>FinTechX</span><span>AIWorks</span><span>CloudSync</span><span>PayLink</span>
+        <span>SkillBoost</span><span>HealthPlus</span><span>MarketHub</span><span>TechNova</span>
+        <span>EduGrow</span><span>ShopEase</span><span>TravelGo</span><span>Foodify</span>
+        <span>DataSpark</span><span>SmartHire</span><span>QuickCart</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Journey ──────────────────────────────────── -->
+<section class="journey">
+  <div class="container">
+    <div class="section-label">How It Works</div>
+    <h2 class="section-h2">Your Startup Growth Journey</h2>
+    <div class="journey-track">
+      <div class="journey-step" data-step="01">
+        <div class="step-icon">💡</div>
+        <h3>Idea</h3>
+        <p>Validate market fit and define your USP</p>
+      </div>
+      <div class="journey-arrow"><i class="fas fa-arrow-right"></i></div>
+      <div class="journey-step" data-step="02">
+        <div class="step-icon">🛠</div>
+        <h3>MVP</h3>
+        <p>Build lean, test fast, iterate</p>
+      </div>
+      <div class="journey-arrow"><i class="fas fa-arrow-right"></i></div>
+      <div class="journey-step" data-step="03">
+        <div class="step-icon">🚀</div>
+        <h3>Launch</h3>
+        <p>Strategic go-to-market execution</p>
+      </div>
+      <div class="journey-arrow"><i class="fas fa-arrow-right"></i></div>
+      <div class="journey-step" data-step="04">
+        <div class="step-icon">🎯</div>
+        <h3>Customers</h3>
+        <p>Acquire and retain paying users</p>
+      </div>
+      <div class="journey-arrow"><i class="fas fa-arrow-right"></i></div>
+      <div class="journey-step" data-step="05">
+        <div class="step-icon">📈</div>
+        <h3>Revenue</h3>
+        <p>Optimize unit economics & LTV</p>
+      </div>
+      <div class="journey-arrow"><i class="fas fa-arrow-right"></i></div>
+      <div class="journey-step highlight" data-step="06">
+        <div class="step-icon">🦄</div>
+        <h3>Scale</h3>
+        <p>Become the market leader</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Stage ─────────────────────────────────────── -->
+<section class="stage">
+  <div class="container">
+    <div class="section-label">Coverage</div>
+    <h2 class="section-h2">We Help Startups At Every Stage</h2>
+    <div class="stage-grid">
+      <div class="stage-card">
+        <div class="stage-num">01</div>
+        <div class="stage-emoji">💡</div>
+        <h3>Idea Stage</h3>
+        <p>Brand strategy, landing pages, early user research and positioning.</p>
+      </div>
+      <div class="stage-card">
+        <div class="stage-num">02</div>
+        <div class="stage-emoji">🚀</div>
+        <h3>Seed Stage</h3>
+        <p>Lead gen, community building, product-market fit campaigns.</p>
+      </div>
+      <div class="stage-card">
+        <div class="stage-num">03</div>
+        <div class="stage-emoji">📈</div>
+        <h3>Series A</h3>
+        <p>Performance marketing, paid channels, CRO and retention systems.</p>
+      </div>
+      <div class="stage-card">
+        <div class="stage-num">04</div>
+        <div class="stage-emoji">🌎</div>
+        <h3>Expansion</h3>
+        <p>International growth, enterprise outreach and investor visibility.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Pain → Solution ──────────────────────────── -->
+<section class="pain-solution">
+  <div class="container pain-solution-grid">
+    <div class="pain-col">
+      <div class="section-label red">Common Challenges</div>
+      <h2 class="section-h2">Are These Holding You Back?</h2>
+      <div class="pain-list">
+        <div class="pain-item"><span class="pain-x">✕</span><div><strong>No Customers</strong><p>Your product is great but nobody knows it exists.</p></div></div>
+        <div class="pain-item"><span class="pain-x">✕</span><div><strong>Poor Branding</strong><p>Inconsistent identity that fails to inspire trust.</p></div></div>
+        <div class="pain-item"><span class="pain-x">✕</span><div><strong>Low Website Traffic</strong><p>Crickets on Google — no organic discovery at all.</p></div></div>
+        <div class="pain-item"><span class="pain-x">✕</span><div><strong>Weak Social Presence</strong><p>Posts that get no engagement, followers, or leads.</p></div></div>
+      </div>
+    </div>
+    <div class="arrow-col"><div class="big-arrow"><i class="fas fa-arrow-right"></i></div></div>
+    <div class="solution-col">
+      <div class="section-label green">Our Solutions</div>
+      <h2 class="section-h2">How LaunchBoost Fixes It</h2>
+      <div class="solution-list">
+        <div class="solution-item"><span class="sol-check">✓</span><div><strong>Startup Branding</strong><p>Build a memorable identity investors and customers love.</p></div></div>
+        <div class="solution-item"><span class="sol-check">✓</span><div><strong>SEO Growth Engine</strong><p>Rank on page 1 and drive compounding organic traffic.</p></div></div>
+        <div class="solution-item"><span class="sol-check">✓</span><div><strong>Paid Advertising</strong><p>Profitable Google & Meta campaigns from day one.</p></div></div>
+        <div class="solution-item"><span class="sol-check">✓</span><div><strong>Lead Generation</strong><p>Qualified pipeline that converts to recurring revenue.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Services Slider ──────────────────────────── -->
+<section id="services" class="services">
+  <div class="container">
+    <div class="section-label">What We Do</div>
+    <h2 class="section-h2">Growth Services</h2>
+    <p class="section-sub">End-to-end marketing solutions designed for high-velocity startup growth.</p>
+    <div class="swiper serviceSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide svc-slide">
+          <div class="svc-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>Startup Branding</h3>
+          <p>Logo, brand voice, visual identity, pitch decks — everything to make you unforgettable.</p>
+          <a href="#contact" class="svc-link">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="swiper-slide svc-slide">
+          <div class="svc-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Growth Marketing</h3>
+          <p>Full-funnel strategy from awareness to conversion with measurable ROI at every step.</p>
+          <a href="#contact" class="svc-link">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="swiper-slide svc-slide">
+          <div class="svc-icon"><i class="fas fa-search"></i></div>
+          <h3>SEO & Content</h3>
+          <p>Dominate search results with technical SEO, keyword strategy and authoritative content.</p>
+          <a href="#contact" class="svc-link">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="swiper-slide svc-slide">
+          <div class="svc-icon"><i class="fas fa-ad"></i></div>
+          <h3>Paid Advertising</h3>
+          <p>Data-driven Google, Meta & LinkedIn campaigns optimised for lowest CAC and highest LTV.</p>
+          <a href="#contact" class="svc-link">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="swiper-slide svc-slide">
+          <div class="svc-icon"><i class="fas fa-users"></i></div>
+          <h3>Lead Generation</h3>
+          <p>Automated outbound + inbound funnels that fill your CRM with qualified prospects daily.</p>
+          <a href="#contact" class="svc-link">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="swiper-slide svc-slide">
+          <div class="svc-icon"><i class="fas fa-eye"></i></div>
+          <h3>Investor Visibility</h3>
+          <p>PR strategy, thought-leadership and digital presence that gets you in front of VCs.</p>
+          <a href="#contact" class="svc-link">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="swiper-slide svc-slide">
+          <div class="svc-icon"><i class="fab fa-instagram"></i></div>
+          <h3>Social Media</h3>
+          <p>Content calendars, community management and viral campaigns across all platforms.</p>
+          <a href="#contact" class="svc-link">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="swiper-slide svc-slide">
+          <div class="svc-icon"><i class="fas fa-rocket"></i></div>
+          <h3>Product Launch</h3>
+          <p>End-to-end launch playbook: pre-launch buzz, launch day execution, post-launch growth.</p>
+          <a href="#contact" class="svc-link">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Stats ─────────────────────────────────────── -->
+<section class="stats-section">
+  <div class="container stats-grid">
+    <div class="stat-box">
+      <i class="fas fa-rocket"></i>
+      <h2 class="counter" data-target="500">0</h2><span>+</span>
+      <p>Startups Launched</p>
+    </div>
+    <div class="stat-box">
+      <i class="fas fa-chart-line"></i>
+      <h2 class="counter" data-target="20">0</h2><span>Cr+</span>
+      <p>Revenue Generated</p>
+    </div>
+    <div class="stat-box">
+      <i class="fas fa-star"></i>
+      <h2 class="counter" data-target="98">0</h2><span>%</span>
+      <p>Client Satisfaction</p>
+    </div>
+    <div class="stat-box">
+      <i class="fas fa-bullseye"></i>
+      <h2 class="counter" data-target="150">0</h2><span>+</span>
+      <p>Growth Campaigns</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Case Studies ─────────────────────────────── -->
+<section id="results" class="case-studies">
+  <div class="container">
+    <div class="section-label">Proof</div>
+    <h2 class="section-h2">Success Stories</h2>
+    <p class="section-sub">Real results from real startups — no fluff, just numbers.</p>
+    <div class="case-grid">
+      <div class="case-card">
+        <div class="case-tag">FinTech</div>
+        <h3>FinTechX</h3>
+        <div class="case-metrics">
+          <div class="case-metric"><span class="before">100</span><p>Users Before</p></div>
+          <div class="case-arrow"><i class="fas fa-arrow-right"></i></div>
+          <div class="case-metric"><span class="after">10,000</span><p>Users After</p></div>
+        </div>
+        <div class="case-growth">+9,900% Growth</div>
+        <p class="case-desc">90-day SEO + paid ads blitz turned a struggling app into a category leader.</p>
+      </div>
+      <div class="case-card featured-case">
+        <div class="case-tag">EdTech</div>
+        <h3>EduGrow</h3>
+        <div class="case-metrics">
+          <div class="case-metric"><span class="before">15/mo</span><p>Leads Before</p></div>
+          <div class="case-arrow"><i class="fas fa-arrow-right"></i></div>
+          <div class="case-metric"><span class="after">300/mo</span><p>Leads After</p></div>
+        </div>
+        <div class="case-growth">+1,900% Growth</div>
+        <p class="case-desc">Full-funnel content strategy and LinkedIn outreach multiplied inbound leads 20×.</p>
+      </div>
+      <div class="case-card">
+        <div class="case-tag">SaaS</div>
+        <h3>CloudSync</h3>
+        <div class="case-metrics">
+          <div class="case-metric"><span class="before">₹50K</span><p>Revenue Before</p></div>
+          <div class="case-arrow"><i class="fas fa-arrow-right"></i></div>
+          <div class="case-metric"><span class="after">₹8L</span><p>Revenue After</p></div>
+        </div>
+        <div class="case-growth">+1,500% Growth</div>
+        <p class="case-desc">Repositioned their ICP, launched Google Ads and hit ₹8L MRR in 6 months.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Pricing ──────────────────────────────────── -->
+<section id="pricing" class="pricing">
+  <div class="container">
+    <div class="section-label">Pricing</div>
+    <h2 class="section-h2">Startup Growth Plans</h2>
+    <p class="section-sub">Transparent pricing. No hidden fees. Cancel anytime.</p>
+    <div class="pricing-grid">
+
+      <div class="price-card">
+        <div class="plan-header">
+          <span class="plan-icon">✦</span>
+          <h3>Brand Kickstart</h3>
+          <p class="plan-target">Best For: Pre-launch / Idea Stage</p>
+        </div>
+        <div class="plan-price"><sup>₹</sup>9,999<sub>/mo</sub></div>
+        <p class="plan-gst">+ 18% GST</p>
+        <ul class="plan-features">
+          <li><i class="fas fa-check"></i> Brand Consultation (2 sessions)</li>
+          <li><i class="fas fa-check"></i> Landing Page Audit</li>
+          <li><i class="fas fa-check"></i> Social Media Profile Setup</li>
+          <li><i class="fas fa-check"></i> Monthly Performance Report</li>
+          <li><i class="fas fa-check"></i> Email Support</li>
+          <li class="muted"><i class="fas fa-times"></i> SEO Optimization</li>
+          <li class="muted"><i class="fas fa-times"></i> Paid Advertising</li>
+        </ul>
+        <a href="#contact" class="plan-btn">Get Started</a>
+      </div>
+
+      <div class="price-card popular">
+        <div class="popular-badge">Most Popular</div>
+        <div class="plan-header">
+          <span class="plan-icon">🚀</span>
+          <h3>Growth Engine</h3>
+          <p class="plan-target">Best For: Seed — Series A</p>
+        </div>
+        <div class="plan-price"><sup>₹</sup>24,999<sub>/mo</sub></div>
+        <p class="plan-gst">+ 18% GST</p>
+        <ul class="plan-features">
+          <li><i class="fas fa-check"></i> Everything in Brand Kickstart</li>
+          <li><i class="fas fa-check"></i> Full SEO Optimization</li>
+          <li><i class="fas fa-check"></i> Social Media Management</li>
+          <li><i class="fas fa-check"></i> Lead Generation System</li>
+          <li><i class="fas fa-check"></i> Growth Strategy Sessions</li>
+          <li><i class="fas fa-check"></i> Priority Support</li>
+          <li class="muted"><i class="fas fa-times"></i> Dedicated Manager</li>
+        </ul>
+        <a href="#contact" class="plan-btn">Get Started</a>
+      </div>
+
+      <div class="price-card">
+        <div class="plan-header">
+          <span class="plan-icon">📈</span>
+          <h3>Revenue Accelerator</h3>
+          <p class="plan-target">Best For: Series A — Expansion</p>
+        </div>
+        <div class="plan-price"><sup>₹</sup>49,999<sub>/mo</sub></div>
+        <p class="plan-gst">+ 18% GST</p>
+        <ul class="plan-features">
+          <li><i class="fas fa-check"></i> Everything in Growth Engine</li>
+          <li><i class="fas fa-check"></i> Google & Meta Ads Management</li>
+          <li><i class="fas fa-check"></i> Full Marketing Management</li>
+          <li><i class="fas fa-check"></i> Advanced Analytics Dashboard</li>
+          <li><i class="fas fa-check"></i> CRO & A/B Testing</li>
+          <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+          <li><i class="fas fa-check"></i> Weekly Strategy Calls</li>
+        </ul>
+        <a href="#contact" class="plan-btn">Get Started</a>
+      </div>
+
+      <div class="price-card enterprise">
+        <div class="plan-header">
+          <span class="plan-icon">🦄</span>
+          <h3>Infinity Enterprise</h3>
+          <p class="plan-target">Best For: Scale-ups & Unicorns</p>
+        </div>
+        <div class="plan-price custom-price">Custom</div>
+        <p class="plan-gst">Tailored Pricing</p>
+        <ul class="plan-features">
+          <li><i class="fas fa-check"></i> Dedicated Growth Team</li>
+          <li><i class="fas fa-check"></i> Investor Outreach & PR</li>
+          <li><i class="fas fa-check"></i> Enterprise Analytics Suite</li>
+          <li><i class="fas fa-check"></i> Custom Growth Strategy</li>
+          <li><i class="fas fa-check"></i> White-label Reports</li>
+          <li><i class="fas fa-check"></i> C-Suite Strategy Sessions</li>
+          <li><i class="fas fa-check"></i> 24/7 Dedicated Support</li>
+        </ul>
+        <a href="#contact" class="plan-btn enterprise-btn">Contact Us</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── Comparison Table ──────────────────────────── -->
+<section class="comparison">
+  <div class="container">
+    <div class="section-label">Compare</div>
+    <h2 class="section-h2">Plan Comparison</h2>
+    <div class="table-wrap">
+      <table class="cmp-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>✦ Kickstart</th>
+            <th class="pop-col">🚀 Growth</th>
+            <th>📈 Accelerator</th>
+            <th>🦄 Enterprise</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Brand Consultation</td><td>✅</td><td class="pop-col">✅</td><td>✅</td><td>✅</td></tr>
+          <tr><td>SEO Optimization</td><td>❌</td><td class="pop-col">✅</td><td>✅</td><td>✅</td></tr>
+          <tr><td>Paid Advertising</td><td>❌</td><td class="pop-col">✅</td><td>✅</td><td>✅</td></tr>
+          <tr><td>Lead Generation</td><td>❌</td><td class="pop-col">✅</td><td>✅</td><td>✅</td></tr>
+          <tr><td>Analytics Dashboard</td><td>❌</td><td class="pop-col">❌</td><td>✅</td><td>✅</td></tr>
+          <tr><td>Dedicated Manager</td><td>❌</td><td class="pop-col">❌</td><td>✅</td><td>✅</td></tr>
+          <tr><td>Investor Outreach</td><td>❌</td><td class="pop-col">❌</td><td>❌</td><td>✅</td></tr>
+          <tr><td>Priority Support</td><td>❌</td><td class="pop-col">✅</td><td>✅</td><td>✅</td></tr>
+          <tr><td>Monthly Reports</td><td>✅</td><td class="pop-col">✅</td><td>✅</td><td>✅</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Team ──────────────────────────────────────── -->
+<section class="team">
+  <div class="container">
+    <div class="section-label">Our People</div>
+    <h2 class="section-h2">Meet the Growth Experts</h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#6366f1,#06b6d4)">AJ</div>
+        <h3>Alex Johnson</h3>
+        <p class="team-role">Growth Strategist</p>
+        <p class="team-bio">8 years scaling SaaS startups from 0 to $1M ARR. Former growth lead at two unicorns.</p>
+        <div class="team-socials"><i class="fab fa-linkedin"></i><i class="fab fa-x-twitter"></i></div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">SS</div>
+        <h3>Sarah Smith</h3>
+        <p class="team-role">SEO Specialist</p>
+        <p class="team-bio">Google-certified with 200+ successful SEO campaigns. Passionate about organic, scalable growth.</p>
+        <div class="team-socials"><i class="fab fa-linkedin"></i><i class="fab fa-x-twitter"></i></div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#10b981,#3b82f6)">ML</div>
+        <h3>Michael Lee</h3>
+        <p class="team-role">Performance Marketing Lead</p>
+        <p class="team-bio">Managed ₹10Cr+ in ad spend. Known for campaigns that consistently beat industry benchmarks.</p>
+        <div class="team-socials"><i class="fab fa-linkedin"></i><i class="fab fa-x-twitter"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Testimonials ─────────────────────────────── -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-label">Testimonials</div>
+    <h2 class="section-h2">What Startups Say</h2>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"LaunchBoost helped us acquire over 1,000 customers in our first three months. The ROI was extraordinary."</p>
+        <div class="testi-author"><div class="author-avatar">RS</div><div><strong>Rahul Sharma</strong><span>Founder, FinTechX</span></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Revenue jumped 300% in 90 days after implementing their growth strategy. Best investment we ever made."</p>
+        <div class="testi-author"><div class="author-avatar">PN</div><div><strong>Priya Nair</strong><span>CEO, EduGrow</span></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"The best growth partner we've ever worked with. Measurable results, transparent reporting, exceptional team."</p>
+        <div class="testi-author"><div class="author-avatar">AP</div><div><strong>Arjun Patel</strong><span>Founder, ShopEase</span></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Their SEO and branding services transformed our online visibility completely within just 60 days."</p>
+        <div class="testi-author"><div class="author-avatar">NK</div><div><strong>Neha Kapoor</strong><span>Marketing Head, CloudSync</span></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"We secured investor attention after LaunchBoost redesigned our entire growth funnel. Game changer."</p>
+        <div class="testi-author"><div class="author-avatar">VS</div><div><strong>Vikram Singh</strong><span>Co-Founder, TechNova</span></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Excellent support and measurable results throughout. The team feels like an extension of our own."</p>
+        <div class="testi-author"><div class="author-avatar">AK</div><div><strong>Aisha Khan</strong><span>Director, HealthPlus</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Calculator ───────────────────────────────── -->
+<section class="calculator">
+  <div class="container">
+    <div class="section-label">Tool</div>
+    <h2 class="section-h2">Startup Growth Calculator</h2>
+    <p class="section-sub">See how much revenue you could generate with our growth strategies.</p>
+    <div class="calc-card">
+      <div class="calc-inputs">
+        <div class="calc-field">
+          <label>Monthly Visitors</label>
+          <input type="number" id="visitors" placeholder="e.g. 10000" />
+        </div>
+        <div class="calc-field">
+          <label>Conversion Rate (%)</label>
+          <input type="number" id="conversion" placeholder="e.g. 3" />
+        </div>
+        <div class="calc-field">
+          <label>Revenue Per Customer (₹)</label>
+          <input type="number" id="revenue" placeholder="e.g. 2000" />
+        </div>
+      </div>
+      <button class="btn-primary calc-btn" onclick="calculateGrowth()"><i class="fas fa-calculator"></i> Calculate Growth</button>
+      <div id="result" class="calc-result"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FAQ ───────────────────────────────────────── -->
+<section class="faq">
+  <div class="container">
+    <div class="section-label">FAQ</div>
+    <h2 class="section-h2">Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">How long does SEO take to show results? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>SEO typically takes 3–6 months to generate significant organic traffic. Early wins like technical fixes and quick-win keywords can show results in 4–8 weeks.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Which plan is best for early-stage startups? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Our Growth Engine plan is ideal for early-stage startups looking to build brand awareness, generate leads and establish a strong digital presence.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do you provide customized growth strategies? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Yes. Every engagement starts with a deep-dive audit of your startup, market, competitors, and goals to create a fully tailored growth roadmap.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can you help with product launches? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Absolutely. We run end-to-end launch campaigns — pre-launch buzz, launch day execution, influencer outreach, PR, and post-launch performance tracking.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How do you measure campaign success? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>We track traffic, conversion rates, CAC, LTV, ROAS, and MRR impact. You receive a detailed dashboard report on a schedule that matches your plan.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do you work with startups outside India? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Yes. LaunchBoost supports startups globally through remote consultations, async collaboration, and fully digital growth campaigns.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What industries do you specialize in? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>SaaS, FinTech, EdTech, E-commerce, HealthTech, AI startups, and other high-growth B2B and B2C businesses. If you're growing fast, we're a fit.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Final CTA ─────────────────────────────────── -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-card">
+      <div class="cta-bg-blob"></div>
+      <div class="section-label white">Limited Spots Available</div>
+      <h2>Ready To Scale Your Startup?</h2>
+      <p>Join 500+ startups that have already accelerated their growth with LaunchBoost. Book your free consultation today.</p>
+      <div class="cta-buttons">
+        <a href="#contact" class="btn-primary">Book Free Consultation <i class="fas fa-arrow-right"></i></a>
+        <a href="tel:+919876543210" class="btn-ghost"><i class="fas fa-phone"></i> Call Us Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Contact ───────────────────────────────────── -->
+<section id="contact" class="contact">
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <div class="section-label">Contact</div>
+      <h2 class="section-h2">Book Your Free<br/>Growth Consultation</h2>
+      <p>Fill out the form and our team will reach out within 24 hours with a customised growth plan for your startup.</p>
+      <div class="contact-details">
+        <div class="contact-item"><i class="fas fa-envelope"></i><span>hello@launchboost.in</span></div>
+        <div class="contact-item"><i class="fas fa-phone"></i><span>+91 98765 43210</span></div>
+        <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Bengaluru, India · Remote Worldwide</span></div>
+      </div>
+    </div>
+    <div class="contact-form-wrap">
+      <form id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" id="fname" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" id="femail" placeholder="you@startup.com" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Startup Name *</label>
+            <input type="text" id="fstartup" placeholder="Your startup" required />
+          </div>
+          <div class="form-group">
+            <label>Funding Stage</label>
+            <select id="fstage">
+              <option value="">Select stage</option>
+              <option>Bootstrapped</option>
+              <option>Pre-Seed</option>
+              <option>Seed</option>
+              <option>Series A</option>
+              <option>Series B+</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Tell us about your startup</label>
+          <textarea id="fmessage" rows="4" placeholder="What do you do, who are your customers, what's your biggest growth challenge?"></textarea>
+        </div>
+        <button type="submit" class="btn-primary form-submit"><i class="fas fa-paper-plane"></i> Submit — It's Free</button>
+        <p id="form-msg" class="form-msg"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Newsletter ────────────────────────────────── -->
+<section class="newsletter">
+  <div class="container newsletter-inner">
+    <div>
+      <h3>Get Weekly Startup Growth Tips</h3>
+      <p>Join 12,000+ founders and marketers reading our growth newsletter.</p>
+    </div>
+    <div class="newsletter-form">
+      <input type="email" id="newsEmail" placeholder="Enter your email address" />
+      <button onclick="subscribeNewsletter()" class="btn-primary">Subscribe</button>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Footer ───────────────────────────────────── -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">Launch<span>Boost</span></div>
+      <p>Helping startups launch, grow and scale faster with data-driven marketing and relentless execution.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="X / Twitter"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Startup Branding</a></li>
+        <li><a href="#services">SEO & Content</a></li>
+        <li><a href="#services">Paid Advertising</a></li>
+        <li><a href="#services">Lead Generation</a></li>
+        <li><a href="#services">Product Launch</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#home">About Us</a></li>
+        <li><a href="#results">Case Studies</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li>hello@launchboost.in</li>
+        <li>+91 98765 43210</li>
+        <li>Bengaluru, India</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 LaunchBoost. All rights reserved.</p>
+    <p>Privacy Policy · Terms of Service</p>
+  </div>
+</footer>
+
+<!-- ─── Floating Buttons ──────────────────────────── -->
+<button id="topBtn" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+<a href="https://wa.me/919876543210" class="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- ─── Scripts ───────────────────────────────────── -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
+<script src="slider.js"></script>
+</body>
+</html>
